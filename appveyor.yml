@@ -19,7 +19,7 @@ install:
   # install modules
   - npm install
   # generate static files
-  - npm run generate
+  - npm run generate:gh-pages
   # configure git credentials store (https://www.appveyor.com/docs/how-to/git-push/)
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"

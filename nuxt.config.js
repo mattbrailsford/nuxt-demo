@@ -1,4 +1,15 @@
+// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/nuxt-demo/'
+  }
+} : {}
+
 module.exports = {
+  /*
+  ** Merge router base
+  */
+  ...routerBase,
   /*
   ** Headers of the page
   */
