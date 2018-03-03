@@ -1,6 +1,7 @@
 environment:
   # Nuxt required node v8 minimum
   nodejs_version: "8"
+  # Encrypt sensitive data (https://ci.appveyor.com/tools/encrypt)
   github_access_token:
     secure: zPXhG71DmrbTVmhY03LAHjmYRgwnhU7hvpyNKHZ/Lclhc1tcsJHBP255MgNZOtle
   github_email:
