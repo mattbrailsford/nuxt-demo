@@ -6,10 +6,14 @@ cache:
   directories:
     - "node_modules"
 
+branches:
+  only:
+  - master
+
 install:
   - npm install
   - npm run generate
-
+  
 deploy:
   provider: pages
   skip-cleanup: true
