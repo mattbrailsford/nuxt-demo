@@ -13,7 +13,10 @@ branches:
 install:
   - npm install
   - npm run generate
-  
+
+script:
+  - echo "Skipping tests"
+
 deploy:
   provider: pages
   skip-cleanup: true
